@@ -36,6 +36,7 @@ import DataVisualization from './components/DataVisualization'
 import SynthesisProtocols from './components/SynthesisProtocols'
 import LiteratureDatabase from './components/LiteratureDatabase'
 import ComputationalTools from './components/ComputationalTools'
+import MolecularDescriptors from './components/MolecularDescriptors'
 
 function App() {
   const [activeSection, setActiveSection] = useState('home')
@@ -47,6 +48,7 @@ function App() {
     { id: 'sugars', label: 'Sugar Ligands', icon: Dna },
     { id: 'lectins', label: 'Lectin Profiles', icon: Target },
     { id: 'assays', label: 'Binding Assays', icon: FlaskConical },
+    { id: 'descriptors', label: 'Molecular Descriptors', icon: Atom },
     { id: 'ml', label: 'ML Platform', icon: Brain },
     { id: 'visualization', label: 'Data Visualization', icon: BarChart3 },
     { id: 'synthesis', label: 'Synthesis Protocols', icon: Beaker },
@@ -68,6 +70,8 @@ function App() {
         return <LectinProfiles />
       case 'assays':
         return <BindingAssays />
+      case 'descriptors':
+        return <MolecularDescriptors />
       case 'ml':
         return <MLPlatform />
       case 'visualization':
