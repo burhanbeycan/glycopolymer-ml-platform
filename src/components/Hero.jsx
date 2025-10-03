@@ -129,43 +129,58 @@ export default function Hero({ onNavigate }) {
         </div>
       </div>
 
-      {/* Key Statistics */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <Card className="bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-blue-950/30 dark:to-cyan-950/30 border-blue-200">
-          <CardHeader>
-            <CardTitle className="text-4xl font-bold text-blue-600">450+</CardTitle>
-            <CardDescription>Glycopolymer Structures</CardDescription>
-          </CardHeader>
-          <CardContent>
-            <p className="text-sm text-muted-foreground">
-              Comprehensive library from experimental synthesis and literature data
-            </p>
-          </CardContent>
-        </Card>
+      {/* Platform Statistics */}
+      <div>
+        <h2 className="text-2xl font-bold mb-4 text-center">Platform Statistics</h2>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <Card className="bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-blue-950/30 dark:to-cyan-950/30 border-blue-200">
+            <CardHeader className="pb-2">
+              <CardDescription className="text-xs">Polymers</CardDescription>
+              <CardTitle className="text-3xl font-bold text-blue-600">450+</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p className="text-xs text-muted-foreground">
+                Systematic library with 15 architectures
+              </p>
+            </CardContent>
+          </Card>
 
-        <Card className="bg-gradient-to-br from-purple-50 to-pink-50 dark:from-purple-950/30 dark:to-pink-950/30 border-purple-200">
-          <CardHeader>
-            <CardTitle className="text-4xl font-bold text-purple-600">15+</CardTitle>
-            <CardDescription>Lectin Targets</CardDescription>
-          </CardHeader>
-          <CardContent>
-            <p className="text-sm text-muted-foreground">
-              Including Con A, DC-SIGN, galectins, MBL, and Siglecs
-            </p>
-          </CardContent>
-        </Card>
+          <Card className="bg-gradient-to-br from-purple-50 to-pink-50 dark:from-purple-950/30 dark:to-pink-950/30 border-purple-200">
+            <CardHeader className="pb-2">
+              <CardDescription className="text-xs">Lectins</CardDescription>
+              <CardTitle className="text-3xl font-bold text-purple-600">15+</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p className="text-xs text-muted-foreground">
+                Con A, DC-SIGN, Galectins, MBL, Siglecs
+              </p>
+            </CardContent>
+          </Card>
 
-        <Card className="bg-gradient-to-br from-orange-50 to-red-50 dark:from-orange-950/30 dark:to-red-950/30 border-orange-200">
-          <CardHeader>
-            <CardTitle className="text-4xl font-bold text-orange-600">2,500+</CardTitle>
-            <CardDescription>Binding Data Points</CardDescription>
-          </CardHeader>
-          <CardContent>
-            <p className="text-sm text-muted-foreground">
-              SPR kinetics, fluorescence assays, and ITC measurements
-            </p>
-          </CardContent>
-        </Card>
+          <Card className="bg-gradient-to-br from-orange-50 to-red-50 dark:from-orange-950/30 dark:to-red-950/30 border-orange-200">
+            <CardHeader className="pb-2">
+              <CardDescription className="text-xs">Data Points</CardDescription>
+              <CardTitle className="text-3xl font-bold text-orange-600">7,400+</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p className="text-xs text-muted-foreground">
+                Comprehensive property measurements
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card className="bg-gradient-to-br from-green-50 to-emerald-50 dark:from-green-950/30 dark:to-emerald-950/30 border-green-200">
+            <CardHeader className="pb-2">
+              <CardDescription className="text-xs">Publications</CardDescription>
+              <CardTitle className="text-3xl font-bold text-green-600">449</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p className="text-xs text-muted-foreground">
+                Literature-validated data sources
+              </p>
+            </CardContent>
+          </Card>
+        </div>
       </div>
 
       {/* Polymer Architectures */}
